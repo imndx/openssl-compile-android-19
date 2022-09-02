@@ -15,3 +15,7 @@
 1. 拷贝上面编译生成的```libcrypto.a```和```libssl.a```到```mars/openssl/openssl_lib_android```的对应目录
     > ```arm```对应```armapi-v7a```
 2. 编译协议栈，但```abiFilter```未生效，编译生成的```aar```包含了```arm64-v8a```和```x86_64```架构的```so```文件，需要解压```aar```，删除```arm64-v8a```、```x86_64```、```jni/arm64-v8a```和```jni/x86_64```，然后用```zip```压缩工具压缩，并后缀名为```.aar``
+
+## 致谢
+本项目，参考了[Tutorial: Compile OpenSSL 1.1.1 for Android application](https://proandroiddev.com/tutorial-compile-openssl-to-1-1-1-for-android-application-87137968fee)，脚本等也是基于其修改
+
